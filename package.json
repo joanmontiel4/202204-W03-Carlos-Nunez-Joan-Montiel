@@ -1,0 +1,28 @@
+{
+	"name": "202204-w03-carlos-nunez-joan-montiel",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass -w scss/:css/",
+		"sass:v": "sass --version"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joanmontiel4/202204-W03-Carlos-Nunez-Joan-Montiel.git"
+	},
+	"keywords": [
+		"SASS",
+		"CSS"
+	],
+	"author": "Carlos Nuñez - Joan Montiel",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/joanmontiel4/202204-W03-Carlos-Nunez-Joan-Montiel/issues"
+	},
+	"homepage": "https://github.com/joanmontiel4/202204-W03-Carlos-Nunez-Joan-Montiel#readme",
+	"devDependencies": {
+		"sass": "^1.50.1"
+	}
+}
