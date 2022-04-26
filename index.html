@@ -5,6 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="icon" href="./images/logo.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Panic</title>
 	</head>
 	<body class="container">
@@ -12,17 +19,21 @@
 			<nav class="small-header">
 				<ul class="small-header__elem">
 					<li class="small-header__item">
-						<div class="small-header__menu-btn"></div>
+						<a href="#"
+							><img
+								src="./images/icons-svg-clean/icon-hamburger.svg"
+								alt=""
+						/></a>
 					</li>
 					<li class="small-header__item">
 						<img
 							class="small-header__logo"
-							src="./images/logo32.png"
+							src="./images/sass-bem-media-organized/panic-logo.svg"
 							alt="small-logo"
 						/>
 					</li>
 					<li class="small-header__item">
-						<a class="small-header__home" href="#"></a>
+						<a class="small-header__home" href="#">Home</a>
 					</li>
 				</ul>
 			</nav>
@@ -37,7 +48,7 @@
 					<li class="large-header__item">
 						<img
 							class="large-header__logo"
-							src="images/logo.png"
+							src="./images/sass-bem-media-organized/panic-logo.svg"
 							alt="logo"
 						/>
 					</li>
@@ -50,5 +61,90 @@
 				</ul>
 			</nav>
 		</header>
+		<main class="main-container">
+			<div class="clipped-container">
+				<div class="pink-car__image">
+					<img
+						class="pink-car__play-icon"
+						src="./images/sass-bem-media-organized/play.png"
+						alt="play_icon"
+					/>
+					<div class="words">
+						<span class="pink-car__text-regular">Lorem</span>
+						<span class="pink-car__text-bold">Lorem</span>
+					</div>
+				</div>
+			</div>
+
+			<section class="text">
+				<h2 class="text__title-h2">Lorem ipsum dolor sit</h2>
+				<p class="text__paragraph">
+					amet, consectetur adipisicing elit, sed eiusmod tempor
+					incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+					vemiam, quis nostrud
+				</p>
+				<img
+					class="text__icon-x-rounded-black"
+					src="./images/icons-svg-clean/icon-x-rounded.svg"
+					alt="x icon"
+				/>
+				<img
+					class="text__icon-wave-black"
+					src="./images/icons-svg-clean/icon-wave-black.svg"
+					alt="wave icon black"
+				/>
+				<h2 class="text__title-h2">Lorem ipsum</h2>
+				<a class="text__link" href="">Dolor sit</a>
+			</section>
+			<section class="images-text">
+				<div class="img-txt-g1">
+					<div class="img-txt">
+						<img
+							class="img-txt__img"
+							src="./images/sass-bem-media-organized/home1-works5.jpg"
+							alt="drawing of a woman holding a cover letter"
+						/>
+						<img
+							class="img-txt__icon"
+							src="./images/sass-bem-media-organized/media04.png"
+							alt="dropdown icon"
+						/>
+					</div>
+					<span class="caption">Lorem ipsum dolor sit amet.</span>
+				</div>
+				<div class="img-txt-g2">
+					<div class="img-txt">
+						<img
+							class="img-txt__img"
+							src="./images/sass-bem-media-organized/home2-works9.jpg"
+							alt="pizza restaurant draw image"
+						/>
+						<img
+							class="img-txt__icon"
+							src="./images/sass-bem-media-organized/media04.png"
+							alt="dropdown icon"
+						/>
+					</div>
+					<span class="caption"
+						>Lorem ipsum dolor sit amet, consectetur</span
+					>
+				</div>
+				<div class="img-txt-g3">
+					<div class="img-txt">
+						<img
+							class="img-txt__img"
+							src="./images/sass-bem-media-organized/home3-works3.jpg"
+							alt="woman with shopping bags"
+						/>
+						<img
+							class="img-txt__icon"
+							src="./images/sass-bem-media-organized/media04.png"
+							alt="dropdown icon"
+						/>
+					</div>
+					<span class="caption">Lorem ipsum</span>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
