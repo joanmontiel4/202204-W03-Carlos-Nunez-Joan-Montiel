@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  font-family: "Oswald", sans-serif;
+  background-color: #15ffbc;
+}
+
+.large-header {
+  display: none;
+}
+
+.small-header {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.small-header__elem {
+  list-style: none;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.small-header__logo {
+  display: block;
+  height: 100%;
+}
+
+.small-header__home {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 0.4rem;
+}
+
+.clipped-container {
+  height: 400px;
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  -webkit-clip-path: 0px 0px, 0px 400px, 100% 0px, 100% 0px, 0 100px;
+  clip-path: polygon(0px 0px, 0px 400px, 100% 0px, 100% 0px, 0 100px);
+}
+
+.pink-car__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-image: url("/images/sass-bem-media-organized/media03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+}
+
+.pink-car__play-icon {
+  height: 7.6rem;
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
