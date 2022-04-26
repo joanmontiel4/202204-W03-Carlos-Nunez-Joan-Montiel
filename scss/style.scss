@@ -43,14 +43,12 @@ $letter-spacing: 0.4rem;
 	letter-spacing: $letter-spacing;
 }
 
-.clipped-container {
-	height: 400px;
-	width: 100%;
-	background-color: transparent;
-	overflow: hidden;
-	-webkit-clip-path: (0px 0px, 0px 400px, 100% 0px, 100% 0px, 0 100px);
-	clip-path: polygon(0px 0px, 0px 400px, 100% 0px, 100% 0px, 0 100px);
-}
+// .clipped-container {
+// 	height: 400px;
+// 	width: 100%;
+// 	background-color: transparent;
+// 	overflow: hidden;
+// }
 
 .pink-car__image {
 	display: flex;
@@ -64,6 +62,7 @@ $letter-spacing: 0.4rem;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
 }
 
 .words {
@@ -77,21 +76,21 @@ $letter-spacing: 0.4rem;
 	margin-bottom: 2rem;
 }
 
-// .rotate-letters {
-// 	display: flex;
-// 	flex-direction: column;
-// 	font-size: 2rem;
-// 	font-style: italic;
-// 	color: $primary-color;
-// 	letter-spacing: $letter-spacing;
-// }
+.rotate-letters {
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	font-style: italic;
+	color: $primary-color;
+	letter-spacing: $letter-spacing;
+}
 
-// .pink-car__text-regular {
-// 	font-weight: 300;
-// 	// transform: scale(1.4, 1) rotate(-12deg);
-// }
+.pink-car__text-regular {
+	font-weight: 300;
+	transform: scale(1.4, 1) rotate(-12deg);
+}
 
-// .pink-car__text-bold {
-// 	font-weight: 400;
-// 	// transform: scale(1.4, 1) rotate(-12deg);
-// }
+.pink-car__text-bold {
+	font-weight: 400;
+	transform: scale(1.4, 1) rotate(-12deg);
+}
