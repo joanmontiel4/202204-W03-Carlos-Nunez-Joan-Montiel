@@ -11,8 +11,16 @@ p {
 	font-family: "Oswald", sans-serif;
 	background-color: #080d14;
 	text-align: center;
-	padding: 4%;
-	
+	padding-top: 10em;
+	padding-bottom: 15em;
+	transform: skewY(-10deg);
+}
+
+.footer > div {
+	transform: skewY(10deg);
+}
+.footer > nav {
+	transform: skewY(10deg);
 }
 
 .footer__title {
@@ -39,7 +47,7 @@ p {
 
 .about__anchor {
 	text-decoration: none;
-	color:aliceblue;
+	color:#16ffbd;
 	&:hover {
 		filter: brightness(0) saturate(100%) invert(68%) sepia(6%) saturate(1763%) hue-rotate(314deg) brightness(95%) contrast(89%);
 	}
@@ -71,3 +79,11 @@ p {
 .contact__icons {
 	margin: auto 0.5rem;
 }
+
+// .box-rotate {
+// 	background-color: #080d14;
+// 	height: 15em;
+// 	width: 100%;
+// 	transform: rotate(-10deg);
+// 	position:absolute;
+// }
