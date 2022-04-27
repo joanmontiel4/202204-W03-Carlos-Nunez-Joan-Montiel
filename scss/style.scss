@@ -31,6 +31,11 @@ ul {
 	font-size: 1.5rem;
 
 	// @__elem {
+	// 	list-style: none;
+	// 	height: 10rem;
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	padding: 1rem;
 	// }
 }
 
@@ -186,7 +191,7 @@ ul {
 	text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: variables.$media-query-width) {
 	.small-header {
 		display: none;
 	}
