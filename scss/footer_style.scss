@@ -1,3 +1,12 @@
+h3 {
+	color:aliceblue;
+	margin: 2.5rem 0 1.5rem 0;
+}
+p {
+	color: #16FFBD;
+	letter-spacing: 0.3rem;
+}
+
 .footer {
 	font-family: "Oswald", sans-serif;
 	background-color: #080d14;
@@ -33,17 +42,10 @@
 	font-family: "Oswald", sans-serif;
 	color:aliceblue;
 	letter-spacing: 0.4rem;
-	margin: 0.35rem
+	margin: 0.35rem;
+	font-size: 0.5cm;
 }
 
-h3 {
-	color:aliceblue;
-	margin: 2.5rem 0 1.5rem 0;
-}
-p {
-	color: #16FFBD;
-	letter-spacing: 0.3rem;
-}
 
 .contact {
 	display: flex;
@@ -54,6 +56,3 @@ p {
 .contact__icons {
 	margin: auto 0.5rem;
 }
-
-
-
