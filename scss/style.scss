@@ -1,6 +1,4 @@
-$primary-color: #15ffbc;
-$letter-spacing: 0.3rem;
-//$font-size-h2: 1.4rem;
+@use "./variables";
 
 *,
 *::before,
@@ -14,9 +12,13 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	list-style: none;
+}
+
 .container {
 	font-family: "Oswald", sans-serif;
-	background-color: $primary-color;
+	background-color: variables.$primary-color;
 }
 
 .large-header {
@@ -27,6 +29,9 @@ a {
 	display: block;
 	width: 100%;
 	font-size: 1.5rem;
+
+	// @__elem {
+	// }
 }
 
 .small-header__elem {
@@ -37,6 +42,10 @@ a {
 	padding: 1rem;
 }
 
+.small-header__hamb:hover {
+	filter: variables.$pink-color-filter;
+}
+
 .small-header__logo {
 	display: block;
 	height: 100%;
@@ -45,9 +54,12 @@ a {
 .small-header__home {
 	text-decoration: none;
 	color: inherit;
-	letter-spacing: $letter-spacing;
+	letter-spacing: variables.$letter-spacing;
 }
 
+.small-header__home:hover {
+	color: variables.$pink-color;
+}
 // .clipped-container {
 // 	height: 400px;
 // 	width: 100%;
@@ -86,8 +98,8 @@ a {
 	flex-direction: column;
 	font-size: 2rem;
 	font-style: italic;
-	color: $primary-color;
-	letter-spacing: $letter-spacing;
+	color: variables.$primary-color;
+	letter-spacing: variables.$letter-spacing;
 }
 
 .pink-car__text-regular {
@@ -108,7 +120,7 @@ a {
 	justify-content: center;
 	margin: 1rem 0;
 	text-transform: uppercase;
-	letter-spacing: $letter-spacing;
+	letter-spacing: variables.$letter-spacing;
 }
 
 .text__title-h2 {
@@ -135,6 +147,10 @@ a {
 .text__link {
 	color: black;
 	text-decoration: underline;
+}
+
+.text__link:hover {
+	color: variables.$pink-color;
 }
 
 .images-text {
@@ -168,4 +184,21 @@ a {
 	letter-spacing: 0.3rem;
 	transform: scale(1.4, 1) rotate(-15.5deg);
 	text-align: center;
+}
+
+@media (min-width: 600px) {
+	.small-header {
+		display: none;
+	}
+
+	.large-header {
+		display: block;
+		height: 200px;
+	}
+
+	.large-header__elem {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+	}
 }

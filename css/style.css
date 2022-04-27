@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   font-family: "Oswald", sans-serif;
   background-color: #15ffbc;
@@ -33,6 +37,10 @@ a {
   padding: 1rem;
 }
 
+.small-header__hamb:hover {
+  filter: invert(76%) sepia(8%) saturate(7170%) hue-rotate(298deg) brightness(108%) contrast(98%);
+}
+
 .small-header__logo {
   display: block;
   height: 100%;
@@ -42,6 +50,10 @@ a {
   text-decoration: none;
   color: inherit;
   letter-spacing: 0.3rem;
+}
+
+.small-header__home:hover {
+  color: #ff8dac;
 }
 
 .pink-car__image {
@@ -125,6 +137,10 @@ a {
   text-decoration: underline;
 }
 
+.text__link:hover {
+  color: #ff8dac;
+}
+
 .images-text {
   width: auto;
 }
@@ -154,6 +170,23 @@ a {
   letter-spacing: 0.3rem;
   transform: scale(1.4, 1) rotate(-15.5deg);
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  .small-header {
+    display: none;
+  }
+
+  .large-header {
+    display: block;
+    height: 200px;
+  }
+
+  .large-header__elem {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
