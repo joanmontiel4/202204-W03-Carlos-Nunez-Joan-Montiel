@@ -1,5 +1,6 @@
 $primary-color: #15ffbc;
-$letter-spacing: 0.4rem;
+$letter-spacing: 0.3rem;
+//$font-size-h2: 1.4rem;
 
 *,
 *::before,
@@ -7,6 +8,10 @@ $letter-spacing: 0.4rem;
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container {
@@ -93,4 +98,74 @@ $letter-spacing: 0.4rem;
 .pink-car__text-bold {
 	font-weight: 400;
 	transform: scale(1.4, 1) rotate(-12deg);
+}
+
+.text {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: $letter-spacing;
+}
+
+.text__title-h2 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	text-align: center;
+	transform: scale(1.2, 1);
+	padding: 1rem 5rem;
+}
+
+.text__paragraph {
+	text-align: center;
+	transform: scale(1.2, 1);
+	padding: 1rem 5rem;
+	line-height: 2.5rem;
+}
+
+.text__icon-wave-black {
+	margin: 3rem 0 0 0;
+	height: 6rem;
+	width: 6rem;
+}
+
+.text__link {
+	color: black;
+	text-decoration: underline;
+}
+
+.images-text {
+	width: auto;
+}
+
+.img-txt-g1 {
+	width: auto;
+}
+
+.image1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 580px;
+	width: auto;
+
+	background-image: url("/images/sass-bem-media-organized/home1-works5.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+}
+
+.caption {
+	position: relative;
+	top: -3rem;
+	font-size: 1.4rem;
+	font-style: italic;
+	letter-spacing: 0.3rem;
+	transform: scale(1.4, 1) rotate(-15.5deg);
+	text-align: center;
 }

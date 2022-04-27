@@ -1,11 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
-    <title>Path</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="media01" transform="translate(-186.000000, -90.000000)" fill="#16FFBD" fill-rule="nonzero">
-            <path d="M192.4,95 L195.2,92.2 C195.6,91.8 195.6,91.2 195.2,90.8 C194.8,90.4 194.2,90.4 193.8,90.8 L191,93.6 L188.2,90.8 C187.8,90.4 187.2,90.4 186.8,90.8 C186.4,91.2 186.4,91.8 186.8,92.2 L189.6,95 L186.8,97.8 C186.4,98.2 186.4,98.8 186.8,99.2 C187,99.4 187.3,99.5 187.5,99.5 C187.7,99.5 188,99.4 188.2,99.2 L191,96.4 L193.8,99.2 C194,99.4 194.3,99.5 194.5,99.5 C194.7,99.5 195,99.4 195.2,99.2 C195.6,98.8 195.6,98.2 195.2,97.8 L192.4,95 Z" id="Path"></path>
-        </g>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10mm"
+   height="10mm"
+   viewBox="0 0 10 10"
+   version="1.1"
+   id="svg1389"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="icon-x-rounded.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1391"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="50mm"
+     inkscape:zoom="5.6872054"
+     inkscape:cx="81.762477"
+     inkscape:cy="49.49707"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1386" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       class="st1"
+       d="m 5.3018079,5.0244366 0.740833,-0.7408341 c 0.105833,-0.105833 0.105833,-0.264583 0,-0.370416 -0.105833,-0.105834 -0.264583,-0.105834 -0.370417,0 l -0.7408328,0.740833 -0.740833,-0.740833 c -0.105834,-0.105834 -0.264584,-0.105834 -0.370417,0 -0.105833,0.105833 -0.105833,0.264583 0,0.370416 l 0.740833,0.7408341 -0.740833,0.740833 c -0.105833,0.105833 -0.105833,0.264583 0,0.370417 0.05292,0.05292 0.132292,0.07937 0.185208,0.07937 0.05292,0 0.132292,-0.02646 0.185209,-0.07937 l 0.740833,-0.740834 0.7408328,0.740834 c 0.05292,0.05292 0.132292,0.07937 0.185209,0.07937 0.05292,0 0.132291,-0.02646 0.185208,-0.07937 0.105833,-0.105834 0.105833,-0.264584 0,-0.370417 z"
+       id="path900"
+       style="fill:#080d14;stroke-width:0.264583" />
+  </g>
 </svg>
