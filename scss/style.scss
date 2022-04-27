@@ -30,91 +30,74 @@ ul {
 	width: 100%;
 	font-size: 1.5rem;
 
-	// @__elem {
-	// 	list-style: none;
-	// 	height: 10rem;
-	// 	display: flex;
-	// 	justify-content: space-between;
-	// 	padding: 1rem;
-	// }
+	&__elem {
+		list-style: none;
+		height: 10rem;
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
+	&__hamb:hover {
+		filter: variables.$pink-color-filter;
+	}
+
+	&__logo {
+		display: block;
+		height: 100%;
+	}
+
+	&__home {
+		text-decoration: none;
+		color: inherit;
+		letter-spacing: variables.$letter-spacing;
+
+		&:hover {
+			color: variables.$pink-color;
+		}
+	}
 }
 
-.small-header__elem {
-	list-style: none;
-	height: 10rem;
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem;
-}
+.pink-car {
+	&__image {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 400px;
+		width: 100%;
 
-.small-header__hamb:hover {
-	filter: variables.$pink-color-filter;
-}
+		background-image: url("/images/sass-bem-media-organized/media03.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+	}
 
-.small-header__logo {
-	display: block;
-	height: 100%;
-}
+	&__play-icon {
+		height: 7.6rem;
+		width: 8rem;
+		margin-bottom: 2rem;
+	}
 
-.small-header__home {
-	text-decoration: none;
-	color: inherit;
-	letter-spacing: variables.$letter-spacing;
-}
+	&__icon-txt {
+		display: flex;
+		flex-direction: column;
+		font-size: 2rem;
+		font-style: italic;
+		color: variables.$primary-color;
+		letter-spacing: variables.$letter-spacing;
+	}
 
-.small-header__home:hover {
-	color: variables.$pink-color;
-}
-// .clipped-container {
-// 	height: 400px;
-// 	width: 100%;
-// 	background-color: transparent;
-// 	overflow: hidden;
-// }
+	&__text-regular {
+		font-weight: 300;
+		transform: scale(1.4, 1) rotate(-12deg);
+	}
 
-.pink-car__image {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 400px;
-	width: 100%;
-
-	background-image: url("/images/sass-bem-media-organized/media03.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
-}
-
-.words {
-	display: flex;
-	flex-direction: column;
-}
-
-.pink-car__play-icon {
-	height: 7.6rem;
-	width: 8rem;
-	margin-bottom: 2rem;
-}
-
-.rotate-letters {
-	display: flex;
-	flex-direction: column;
-	font-size: 2rem;
-	font-style: italic;
-	color: variables.$primary-color;
-	letter-spacing: variables.$letter-spacing;
-}
-
-.pink-car__text-regular {
-	font-weight: 300;
-	transform: scale(1.4, 1) rotate(-12deg);
-}
-
-.pink-car__text-bold {
-	font-weight: 400;
-	transform: scale(1.4, 1) rotate(-12deg);
+	&__text-bold {
+		font-weight: 400;
+		transform: scale(1.4, 1) rotate(-12deg);
+	}
 }
 
 .text {
@@ -126,69 +109,151 @@ ul {
 	margin: 1rem 0;
 	text-transform: uppercase;
 	letter-spacing: variables.$letter-spacing;
+
+	&__title-h2 {
+		font-size: 2.5rem;
+		font-weight: 300;
+		text-align: center;
+		transform: scale(1.2, 1);
+		padding: 1rem 5rem;
+	}
+
+	&__paragraph {
+		text-align: center;
+		transform: scale(1.2, 1);
+		padding: 1rem 5rem;
+		line-height: 2.5rem;
+	}
+
+	&__icon-wave-black {
+		margin: 3rem 0 0 0;
+		height: 6rem;
+		width: 6rem;
+	}
+
+	&__link {
+		color: black;
+		text-decoration: underline;
+
+		&:hover {
+			color: variables.$pink-color;
+		}
+	}
 }
 
-.text__title-h2 {
-	font-size: 2.5rem;
-	font-weight: 300;
-	text-align: center;
-	transform: scale(1.2, 1);
-	padding: 1rem 5rem;
-}
-
-.text__paragraph {
-	text-align: center;
-	transform: scale(1.2, 1);
-	padding: 1rem 5rem;
-	line-height: 2.5rem;
-}
-
-.text__icon-wave-black {
-	margin: 3rem 0 0 0;
-	height: 6rem;
-	width: 6rem;
-}
-
-.text__link {
-	color: black;
-	text-decoration: underline;
-}
-
-.text__link:hover {
-	color: variables.$pink-color;
-}
-
-.images-text {
+.set-images {
 	width: auto;
 }
 
-.img-txt-g1 {
-	width: auto;
-}
-
-.image1 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 580px;
+.img1 {
 	width: auto;
 
-	background-image: url("/images/sass-bem-media-organized/home1-works5.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+	&__image {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 580px;
+		width: auto;
 
-	clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+		background-image: url("/images/sass-bem-media-organized/home1-works5.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+
+		clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+
+		&:hover .img1__icon {
+			opacity: 1;
+		}
+	}
+
+	&__icon {
+		opacity: 0;
+	}
+
+	&__caption {
+		position: relative;
+		top: -3rem;
+		font-size: 1.4rem;
+		font-style: italic;
+		letter-spacing: 0.3rem;
+		transform: scale(1.4, 1) rotate(-20deg);
+		text-align: center;
+	}
 }
 
-.caption {
-	position: relative;
-	top: -3rem;
-	font-size: 1.4rem;
-	font-style: italic;
-	letter-spacing: 0.3rem;
-	transform: scale(1.4, 1) rotate(-15.5deg);
-	text-align: center;
+.img2 {
+	width: auto;
+
+	&__image {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 580px;
+		width: auto;
+
+		background-image: url("/images/sass-bem-media-organized/home2-works9.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+
+		clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+
+		&:hover .img2__icon {
+			opacity: 1;
+		}
+	}
+
+	&__icon {
+		opacity: 0;
+	}
+
+	&__caption {
+		position: relative;
+		top: -3rem;
+		font-size: 1.4rem;
+		font-style: italic;
+		letter-spacing: 0.3rem;
+		transform: scale(1.4, 1) rotate(-20deg);
+		text-align: center;
+	}
+}
+
+.img3 {
+	width: auto;
+
+	&__image {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 580px;
+		width: auto;
+
+		background-image: url("/images/sass-bem-media-organized/home3-works3.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+
+		clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+
+		&:hover .img3__icon {
+			opacity: 1;
+		}
+	}
+
+	&__icon {
+		opacity: 0;
+	}
+
+	&__caption {
+		position: relative;
+		top: -3rem;
+		font-size: 1.4rem;
+		font-style: italic;
+		letter-spacing: 0.3rem;
+		transform: scale(1.4, 1) rotate(-20deg);
+		text-align: center;
+	}
 }
 
 @media (min-width: variables.$media-query-width) {

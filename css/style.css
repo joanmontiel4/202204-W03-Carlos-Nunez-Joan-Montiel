@@ -28,7 +28,6 @@ ul {
   width: 100%;
   font-size: 1.5rem;
 }
-
 .small-header__elem {
   list-style: none;
   height: 10rem;
@@ -36,22 +35,18 @@ ul {
   justify-content: space-between;
   padding: 1rem;
 }
-
 .small-header__hamb:hover {
   filter: invert(76%) sepia(8%) saturate(7170%) hue-rotate(298deg) brightness(108%) contrast(98%);
 }
-
 .small-header__logo {
   display: block;
   height: 100%;
 }
-
 .small-header__home {
   text-decoration: none;
   color: inherit;
   letter-spacing: 0.3rem;
 }
-
 .small-header__home:hover {
   color: #ff8dac;
 }
@@ -69,19 +64,12 @@ ul {
   background-size: cover;
   clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
 }
-
-.words {
-  display: flex;
-  flex-direction: column;
-}
-
 .pink-car__play-icon {
   height: 7.6rem;
   width: 8rem;
   margin-bottom: 2rem;
 }
-
-.rotate-letters {
+.pink-car__icon-txt {
   display: flex;
   flex-direction: column;
   font-size: 2rem;
@@ -89,12 +77,10 @@ ul {
   color: #15ffbc;
   letter-spacing: 0.3rem;
 }
-
 .pink-car__text-regular {
   font-weight: 300;
   transform: scale(1.4, 1) rotate(-12deg);
 }
-
 .pink-car__text-bold {
   font-weight: 400;
   transform: scale(1.4, 1) rotate(-12deg);
@@ -110,7 +96,6 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
-
 .text__title-h2 {
   font-size: 2.5rem;
   font-weight: 300;
@@ -118,38 +103,33 @@ ul {
   transform: scale(1.2, 1);
   padding: 1rem 5rem;
 }
-
 .text__paragraph {
   text-align: center;
   transform: scale(1.2, 1);
   padding: 1rem 5rem;
   line-height: 2.5rem;
 }
-
 .text__icon-wave-black {
   margin: 3rem 0 0 0;
   height: 6rem;
   width: 6rem;
 }
-
 .text__link {
   color: black;
   text-decoration: underline;
 }
-
 .text__link:hover {
   color: #ff8dac;
 }
 
-.images-text {
+.set-images {
   width: auto;
 }
 
-.img-txt-g1 {
+.img1 {
   width: auto;
 }
-
-.image1 {
+.img1__image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,14 +141,81 @@ ul {
   background-position: center;
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
 }
-
-.caption {
+.img1__image:hover .img1__icon {
+  opacity: 1;
+}
+.img1__icon {
+  opacity: 0;
+}
+.img1__caption {
   position: relative;
   top: -3rem;
   font-size: 1.4rem;
   font-style: italic;
   letter-spacing: 0.3rem;
-  transform: scale(1.4, 1) rotate(-15.5deg);
+  transform: scale(1.4, 1) rotate(-20deg);
+  text-align: center;
+}
+
+.img2 {
+  width: auto;
+}
+.img2__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 580px;
+  width: auto;
+  background-image: url("/images/sass-bem-media-organized/home2-works9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+}
+.img2__image:hover .img2__icon {
+  opacity: 1;
+}
+.img2__icon {
+  opacity: 0;
+}
+.img2__caption {
+  position: relative;
+  top: -3rem;
+  font-size: 1.4rem;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+  transform: scale(1.4, 1) rotate(-20deg);
+  text-align: center;
+}
+
+.img3 {
+  width: auto;
+}
+.img3__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 580px;
+  width: auto;
+  background-image: url("/images/sass-bem-media-organized/home3-works3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+}
+.img3__image:hover .img3__icon {
+  opacity: 1;
+}
+.img3__icon {
+  opacity: 0;
+}
+.img3__caption {
+  position: relative;
+  top: -3rem;
+  font-size: 1.4rem;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+  transform: scale(1.4, 1) rotate(-20deg);
   text-align: center;
 }
 
