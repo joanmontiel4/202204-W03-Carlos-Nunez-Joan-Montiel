@@ -37,6 +37,14 @@ p {
   margin: 2rem auto 3.5rem auto;
 }
 
+.about__anchor {
+  text-decoration: none;
+  color: aliceblue;
+}
+.about__anchor:hover {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(6%) saturate(1763%) hue-rotate(314deg) brightness(95%) contrast(89%);
+}
+
 .tabs__item {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
@@ -44,6 +52,14 @@ p {
   letter-spacing: 0.4rem;
   margin: 0.35rem;
   font-size: 0.5cm;
+}
+.tabs__item:hover {
+  text-decoration: line-through;
+  color: rgb(212, 148, 148);
+}
+
+.contact__icons:hover {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(6%) saturate(1763%) hue-rotate(314deg) brightness(95%) contrast(89%);
 }
 
 .contact {
