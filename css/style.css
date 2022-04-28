@@ -51,27 +51,55 @@ ul {
   color: #ff8dac;
 }
 
+.pink-car {
+  width: 100vw;
+}
+.pink-car__container {
+  width: 100%;
+  position: relative;
+  height: calc(500px + 20vw);
+  clip-path: polygon(0 20vw, 100% 0%, 100% calc(100% - 20vw), 0% 100%);
+}
+.pink-car__container:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.pink-car__container:hover .pink-car__image {
+  transform: scale(1.2);
+}
 .pink-car__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: 0.3s ease;
+}
+.pink-car__icon-txt {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 100%;
-  background-image: url("/images/sass-bem-media-organized/media03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
 }
 .pink-car__play-icon {
-  height: 7.6rem;
-  width: 8rem;
-  margin-bottom: 2rem;
+  width: 155px;
+  height: 150px;
 }
-.pink-car__icon-txt {
+.pink-car__txt {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   font-style: italic;
   color: #15ffbc;
