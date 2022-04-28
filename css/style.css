@@ -113,6 +113,12 @@ ul {
   font-weight: 400;
   transform: scale(1.4, 1) rotate(-12deg);
 }
+.pink-car__txt-video-regular {
+  display: none;
+}
+.pink-car__txt-video-bold {
+  display: none;
+}
 
 .text {
   width: auto;
@@ -175,6 +181,7 @@ ul {
 }
 .img1__image-container:hover .img1__image {
   transform: scale(1.2);
+  overflow: hidden;
 }
 .img1__image-container:hover .img1__icon {
   opacity: 1;
@@ -224,6 +231,7 @@ ul {
 }
 .img2__image-container:hover .img2__image {
   transform: scale(1.2);
+  z-index: -1;
 }
 .img2__image-container:hover .img2__icon {
   opacity: 1;
@@ -283,6 +291,7 @@ ul {
   object-fit: cover;
   position: relative;
   transition: 0.3s ease;
+  z-index: -3;
 }
 .img3__icon {
   opacity: 0;
@@ -331,6 +340,74 @@ ul {
   .large-header__logo {
     width: 150px;
     height: auto;
+  }
+
+  .pink-car__image {
+    display: none;
+  }
+  .pink-car__text-regular {
+    display: none;
+  }
+  .pink-car__text-bold {
+    display: none;
+  }
+  .pink-car__txt-video-regular {
+    display: block;
+    font-weight: 300;
+    transform: scale(1.4, 1) rotate(-12deg);
+  }
+  .pink-car__txt-video-bold {
+    display: block;
+    font-weight: 400;
+    transform: scale(1.4, 1) rotate(-12deg);
+  }
+  .pink-car__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .set-images {
+    display: flex;
+    height: calc(500px + 20vw);
+    width: 100%;
+    clip-path: polygon(0 20vw, 100% 0%, 100% calc(100% - 20vw), 0% 100%);
+    margin-bottom: 5rem;
+  }
+
+  .img1__image-container {
+    clip-path: none;
+    width: 33.3333333333vw;
+    height: calc(500px + 10vw);
+    top: 10vw;
+    overflow: hidden;
+  }
+  .img1__caption {
+    width: 100%;
+    top: 6rem;
+  }
+
+  .img2__image-container {
+    clip-path: none;
+    width: 33.3333333333vw;
+    height: calc(500px + 10vw);
+    top: 5vw;
+    overflow: hidden;
+  }
+  .img2__caption {
+    width: 33.3333333333vw;
+  }
+
+  .img3__image-container {
+    clip-path: none;
+    width: 33.3333333333vw;
+    height: calc(500px + 6.6666666667vw);
+    overflow: hidden;
+  }
+  .img3__caption {
+    width: 100%;
+    top: -6rem;
   }
 }
 

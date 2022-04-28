@@ -135,15 +135,13 @@ ul {
 		transform: scale(1.4, 1) rotate(-12deg);
 	}
 
-	// &__caption {
-	// 	position: relative;
-	// 	top: -3rem;
-	// 	font-size: 1.4rem;
-	// 	font-style: italic;
-	// 	letter-spacing: 0.3rem;
-	// 	transform: variables.$text-slope;
-	// 	text-align: center;
-	// }
+	&__txt-video-regular {
+		display: none;
+	}
+
+	&__txt-video-bold {
+		display: none;
+	}
 }
 
 .text {
@@ -219,6 +217,7 @@ ul {
 
 		&:hover .img1__image {
 			transform: scale(1.2);
+			overflow: hidden;
 		}
 
 		&:hover .img1__icon {
@@ -281,6 +280,7 @@ ul {
 
 		&:hover .img2__image {
 			transform: scale(1.2);
+			z-index: -1;
 		}
 
 		&:hover .img2__icon {
@@ -356,6 +356,7 @@ ul {
 		object-fit: cover;
 		position: relative;
 		transition: 0.3s ease;
+		z-index: -3;
 	}
 
 	&__icon {
@@ -410,6 +411,95 @@ ul {
 		&__logo {
 			width: 150px;
 			height: auto;
+		}
+	}
+
+	.pink-car {
+		&__image {
+			display: none;
+		}
+
+		&__text-regular {
+			display: none;
+		}
+
+		&__text-bold {
+			display: none;
+		}
+
+		&__txt-video-regular {
+			display: block;
+			font-weight: 300;
+			transform: scale(1.4, 1) rotate(-12deg);
+		}
+
+		&__txt-video-bold {
+			display: block;
+			font-weight: 400;
+			transform: scale(1.4, 1) rotate(-12deg);
+		}
+
+		&__video {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.set-images {
+		display: flex;
+		height: calc(500px + 20vw);
+		width: 100%;
+		clip-path: polygon(
+			0 calc(0.2 * 100vw),
+			100% 0%,
+			100% calc(100% - calc(0.2 * 100vw)),
+			0% 100%
+		);
+		margin-bottom: 5rem;
+	}
+
+	.img1 {
+		&__image-container {
+			clip-path: none;
+			width: calc(100vw / 3);
+			height: calc(500px + calc(30vw / 3));
+			top: 10vw;
+			overflow: hidden;
+		}
+
+		&__caption {
+			width: 100%;
+			top: 6rem;
+		}
+	}
+
+	.img2 {
+		&__image-container {
+			clip-path: none;
+			width: calc(100vw / 3);
+			height: calc(500px + calc(30vw / 3));
+			top: 5vw;
+			overflow: hidden;
+		}
+
+		&__caption {
+			width: calc(100vw / 3);
+		}
+	}
+
+	.img3 {
+		&__image-container {
+			clip-path: none;
+			width: calc(100vw / 3);
+			height: calc(500px + calc(20vw / 3));
+			overflow: hidden;
+		}
+
+		&__caption {
+			width: 100%;
+			top: -6rem;
 		}
 	}
 }
