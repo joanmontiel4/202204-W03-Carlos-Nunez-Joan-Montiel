@@ -281,12 +281,28 @@ ul {
   .large-header {
     display: block;
     height: 200px;
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    overflow: hidden;
   }
-
   .large-header__elem {
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
+    list-style: none;
+    gap: 5vw;
+  }
+  .large-header__link {
+    color: black;
+  }
+  .large-header__link:hover {
+    color: #ff8dac;
+  }
+  .large-header__logo {
+    width: 150px;
+    height: auto;
   }
 }
 

@@ -339,11 +339,31 @@ ul {
 	.large-header {
 		display: block;
 		height: 200px;
-	}
+		width: 100%;
+		font-size: 1rem;
+		letter-spacing: variables.$letter-spacing;
+		overflow: hidden;
 
-	.large-header__elem {
-		display: flex;
-		justify-content: center;
-		align-items: stretch;
+		&__elem {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			gap: 5vw;
+		}
+
+		&__link {
+			color: black;
+		}
+
+		&__link:hover {
+			color: variables.$pink-color;
+		}
+
+		&__logo {
+			width: 150px;
+			height: auto;
+		}
 	}
 }
