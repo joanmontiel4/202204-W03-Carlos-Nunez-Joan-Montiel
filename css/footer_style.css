@@ -12,9 +12,10 @@ p {
   font-family: "Oswald", sans-serif;
   background-color: #080d14;
   text-align: center;
-  padding-top: 10em;
-  padding-bottom: 15em;
+  padding-top: 7em;
+  padding-bottom: 7em;
   transform: skewY(-10deg);
+  letter-spacing: 0.4rem;
 }
 
 .footer > div {
@@ -26,7 +27,6 @@ p {
 }
 
 .footer__title {
-  margin: 2.5rem auto;
   color: #16FFBD;
   letter-spacing: 0.4rem;
 }
