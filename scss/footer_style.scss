@@ -11,12 +11,20 @@ p {
 	font-family: "Oswald", sans-serif;
 	background-color: #080d14;
 	text-align: center;
-	padding: 4%;
-	
+	padding-top: 7em;
+	padding-bottom: 7em;
+	transform: skewY(-10deg);
+	letter-spacing: 0.4rem;
+}
+
+.footer > div {
+	transform: skewY(10deg);
+}
+.footer > nav {
+	transform: skewY(10deg);
 }
 
 .footer__title {
-	margin: 2.5rem auto;
 	color: #16FFBD;
 	letter-spacing: 0.4rem;
 }
@@ -39,7 +47,7 @@ p {
 
 .about__anchor {
 	text-decoration: none;
-	color:aliceblue;
+	color:#16ffbd;
 	&:hover {
 		filter: brightness(0) saturate(100%) invert(68%) sepia(6%) saturate(1763%) hue-rotate(314deg) brightness(95%) contrast(89%);
 	}
