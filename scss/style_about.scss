@@ -1,0 +1,120 @@
+@use "./variables";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	font-family: "Oswald", sans-serif;
+	background-color: variables.$primary-color;
+}
+
+.small-header {
+	display: block;
+	width: 100%;
+	font-size: 1.5rem;
+
+	&__elem {
+		list-style: none;
+		height: 10rem;
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
+	&__hamb:hover {
+		filter: variables.$pink-color-filter;
+	}
+
+	&__logo {
+		display: block;
+		height: 100%;
+	}
+
+	&__home {
+		text-decoration: none;
+		color: inherit;
+		letter-spacing: variables.$letter-spacing;
+
+		&:hover {
+			color: variables.$pink-color;
+		}
+	}
+}
+
+.large-header {
+	display: none;
+}
+
+.header-image {
+	width: 100vw;
+
+	&__container {
+		width: 100%;
+		position: relative;
+
+		height: calc(500px + 20vw);
+		clip-path: polygon(
+			0 calc(0.2 * 100vw),
+			100% 0%,
+			100% calc(100% - calc(0.2 * 100vw)),
+			0% 100%
+		);
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: relative;
+	}
+}
+
+@media (min-width: variables.$media-query-width) {
+	.small-header {
+		display: none;
+	}
+
+	.large-header {
+		display: block;
+		height: 200px;
+		width: 100%;
+		font-size: 1rem;
+		letter-spacing: variables.$letter-spacing;
+		overflow: hidden;
+
+		&__elem {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			gap: 5vw;
+		}
+
+		&__link {
+			color: black;
+		}
+
+		&__link:hover {
+			color: variables.$pink-color;
+		}
+
+		&__logo {
+			width: 150px;
+			height: auto;
+		}
+	}
+}
