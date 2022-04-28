@@ -5,6 +5,9 @@ $pink-color: #ff8dac;
 // LETTER SPACING
 $letter-spacing: 0.3rem;
 
+// TEXT SLOPE
+$text-slope: scale(1.4, 1) rotate(-16deg);
+
 // FILTER
 $pink-color-filter: invert(76%) sepia(8%) saturate(7170%) hue-rotate(298deg)
 	brightness(108%) contrast(98%);

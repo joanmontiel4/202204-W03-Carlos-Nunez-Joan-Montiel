@@ -122,30 +122,44 @@ ul {
   color: #ff8dac;
 }
 
-.set-images {
-  width: auto;
+.main-container {
+  width: 100vw;
 }
 
 .img1 {
-  width: auto;
+  width: 100vw;
+}
+.img1__image-container {
+  width: 100%;
+  position: relative;
+  height: calc(500px + 20vw);
+  clip-path: polygon(0 20vw, 100% 0%, 100% calc(100% - 20vw), 0% 100%);
+}
+.img1__image-container:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.img1__image-container:hover .img1__icon {
+  opacity: 1;
 }
 .img1__image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 580px;
-  width: auto;
-  background-image: url("/images/sass-bem-media-organized/home1-works5.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
-}
-.img1__image:hover .img1__icon {
-  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .img1__icon {
   opacity: 0;
+  left: calc(50% - 25px);
+  top: 50%;
+  position: absolute;
+  z-index: 3;
 }
 .img1__caption {
   position: relative;
@@ -153,30 +167,44 @@ ul {
   font-size: 1.4rem;
   font-style: italic;
   letter-spacing: 0.3rem;
-  transform: scale(1.4, 1) rotate(-20deg);
+  transform: scale(1.4, 1) rotate(-16deg);
   text-align: center;
 }
 
 .img2 {
-  width: auto;
+  width: 100vw;
+}
+.img2__image-container {
+  width: 100%;
+  position: relative;
+  height: calc(500px + 20vw);
+  clip-path: polygon(0 20vw, 100% 0%, 100% calc(100% - 20vw), 0% 100%);
+}
+.img2__image-container:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.img2__image-container:hover .img2__icon {
+  opacity: 1;
 }
 .img2__image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 580px;
-  width: auto;
-  background-image: url("/images/sass-bem-media-organized/home2-works9.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
-}
-.img2__image:hover .img2__icon {
-  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .img2__icon {
   opacity: 0;
+  left: calc(50% - 25px);
+  top: 50%;
+  position: absolute;
+  z-index: 3;
 }
 .img2__caption {
   position: relative;
@@ -184,30 +212,44 @@ ul {
   font-size: 1.4rem;
   font-style: italic;
   letter-spacing: 0.3rem;
-  transform: scale(1.4, 1) rotate(-20deg);
+  transform: scale(1.4, 1) rotate(-16deg);
   text-align: center;
 }
 
 .img3 {
-  width: auto;
+  width: 100vw;
+}
+.img3__image-container {
+  width: 100%;
+  position: relative;
+  height: calc(500px + 20vw);
+  clip-path: polygon(0 20vw, 100% 0%, 100% calc(100% - 20vw), 0% 100%);
+}
+.img3__image-container:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.img3__image-container:hover .img3__icon {
+  opacity: 1;
 }
 .img3__image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 580px;
-  width: auto;
-  background-image: url("/images/sass-bem-media-organized/home3-works3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
-}
-.img3__image:hover .img3__icon {
-  opacity: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .img3__icon {
   opacity: 0;
+  left: calc(50% - 25px);
+  top: 50%;
+  position: absolute;
+  z-index: 3;
 }
 .img3__caption {
   position: relative;
@@ -215,7 +257,7 @@ ul {
   font-size: 1.4rem;
   font-style: italic;
   letter-spacing: 0.3rem;
-  transform: scale(1.4, 1) rotate(-20deg);
+  transform: scale(1.4, 1) rotate(-16deg);
   text-align: center;
 }
 
